@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_sandwiches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sandwiches" />
+
+    <TextView
+        android:id="@+id/textView_filling"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filling | " />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout_Filling1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/checkBox_cut_ham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/cut_ham_icon"
+            android:onClick="onCheckboxClickedFilling"
+            android:tag="@string/hamSlices"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_chicken"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Filling1" />
+
+        <CheckBox
+            android:tag="@string/roastedChicken"
+            android:id="@+id/checkBox_chicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/chicken_icon"
+            android:onClick="onCheckboxClickedFilling"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_beef"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_cut_ham"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Filling1" />
+
+        <CheckBox
+            android:tag="@string/beefSteak"
+            android:id="@+id/checkBox_beef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/beef_icon"
+            android:onClick="onCheckboxClickedFilling"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_chicken"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Filling1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:tag="@string/grilledSalmon"
+            android:id="@+id/checkBox_salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:drawableEnd="@drawable/salmon_icon"
+            android:onClick="onCheckboxClickedFilling" />
+
+        <CheckBox
+            android:tag="@string/kebab"
+            android:id="@+id/checkBox_kebab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:drawableEnd="@drawable/kebab_icon2"
+            android:onClick="onCheckboxClickedFilling" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_side"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Side Selection | " />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout_Side"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:tag="@string/tomato"
+            android:id="@+id/checkBox_tomato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/tomato_icon"
+            android:onClick="onCheckboxClickedSide"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_lettuce"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Side"/>
+
+        <CheckBox
+            android:tag="@string/lettuce"
+            android:id="@+id/checkBox_lettuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/lettuce_icon"
+            android:onClick="onCheckboxClickedSide"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_onion"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_tomato"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Side"/>
+
+        <CheckBox
+            android:tag="@string/onion"
+            android:id="@+id/checkBox_onion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/onion_icon"
+            android:onClick="onCheckboxClickedSide"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_cheese"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_lettuce"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Side"/>
+
+        <CheckBox
+            android:tag="@string/cheese"
+            android:id="@+id/checkBox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/cheese_icon"
+            android:onClick="onCheckboxClickedSide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_onion"
+            app:layout_constraintTop_toTopOf="@id/ConstraintLayout_Side"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView_size"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Size" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:tag="@string/smallSize"
+            android:id="@+id/radioButton_6inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/smallSize" />
+
+        <RadioButton
+            android:tag="@string/mediumSize"
+            android:id="@+id/radioButton_9inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/mediumSize" />
+
+        <RadioButton
+            android:tag="@string/largeSize"
+            android:id="@+id/radioButton_12inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/largeSize" />
+
+
+    </RadioGroup>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:text="RM 0.00"
+            android:textColor="@color/colorRed"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutTotal" />
+
+        <TextView
+            android:id="@+id/textView_total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/total"
+            android:textColor="@color/colorBrown"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutTotal" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBrown"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutTotal" />
+        <ImageView
+            android:id="@+id/imageView_sandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutTotal"
+            app:srcCompat="@drawable/sandwich_icon"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorBrown"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutTotal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_order" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_reset" />
+    </LinearLayout>
+
+</LinearLayout>

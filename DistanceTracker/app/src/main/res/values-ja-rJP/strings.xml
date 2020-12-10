@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">距離トラッカー</string>
+    <string name="label_instruction">目的地を選択してください</string>
+    <string name="spring">春のショッピングモール</string>
+    <string name="vivacity">" ビバシティショッピングモール"</string>
+    <string name="distance">" 距離："</string>
+    <string name="error_message">距離を0にすることは不可能です。運が良ければ、男の子。</string>
+</resources>

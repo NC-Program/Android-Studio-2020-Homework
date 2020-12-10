@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tutorial1Task5</string>
+    <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean</string>
+    <string name="question_mideast">The Suez Canal connects the Red Sea and the Indian Oceann</string>
+    <string name="question_africa">The source of Nile river is in Eqypt</string>
+    <string name="question_americas">The Amazon river is the longest river in the Americas</string>
+    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest freshwater lake</string>
+</resources>

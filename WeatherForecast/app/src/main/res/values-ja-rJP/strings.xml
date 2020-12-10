@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">天気予報</string>
+    <string name="location">ケニーヒルウッズ</string>
+    <string name="overcast_cloud">" 曇り雲"</string>
+    <string name="clouds">" 雲"</string>
+    <string name="visibility">" 可視性"</string>
+    <string name="pressure">" 圧力"</string>
+    <string name="humidity">" 湿度"</string>
+    <string name="wind">" 風"</string>
+    <string name="birmingham">" バーミンガム"</string>
+    <string name="party_cloud">" 22\u00B0晴れときどき曇り"</string>
+    <string name="lake_district">" 湖水地方"</string>
+    <string name="snow_shower">2\u00B0 雪のシャワー</string>
+</resources>

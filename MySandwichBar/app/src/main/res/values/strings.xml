@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Sandwich Bar</string>
+    <string name="total">Total: </string>
+    <string name="smallSize">6 inch</string>
+    <string name="mediumSize">9 inch</string>
+    <string name="largeSize">12 inch</string>
+    <string name="hamSlices">Ham Slices</string>
+    <string name="roastedChicken">Roasted Chicken</string>
+    <string name="beefSteak">Beef Steak</string>
+    <string name="grilledSalmon">Grilled Salmon</string>
+    <string name="kebab">Kebab</string>
+    <string name="tomato">Tomato</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="onion">Onion</string>
+    <string name="cheese">Cheese</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayItemActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView_shoppingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/displayItem_shoppingItem"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/textView_shoppingItem_detail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:gravity="center|left"
+        app:layout_constraintLeft_toLeftOf="@id/textView_shoppingItem"
+        app:layout_constraintTop_toBottomOf="@id/textView_shoppingItem"
+        tools:text="Instand Noodle" />
+
+    <TextView
+        android:id="@+id/textView_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/displayItem_detail"
+        app:layout_constraintLeft_toLeftOf="@id/textView_shoppingItem"
+        app:layout_constraintTop_toBottomOf="@id/textView_shoppingItem_detail" />
+
+    <TextView
+        android:id="@+id/textView_detail_detail"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:paddingLeft="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/textView_shoppingItem"
+        app:layout_constraintTop_toBottomOf="@id/textView_detail" />
+    <TextView
+        android:id="@+id/textView_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/displayItem_quantity"
+        app:layout_constraintLeft_toLeftOf="@id/textView_shoppingItem"
+        app:layout_constraintTop_toBottomOf="@id/textView_detail_detail" />
+
+    <TextView
+        android:id="@+id/textView_quantity_detail"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/custom_input"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toRightOf="@id/textView_quantity"
+        app:layout_constraintTop_toTopOf="@id/textView_quantity"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/textView_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="@string/displayItem_size"
+        app:layout_constraintLeft_toRightOf="@id/textView_quantity_detail"
+        app:layout_constraintTop_toTopOf="@id/textView_quantity" />
+
+    <TextView
+        android:id="@+id/textView_size_detail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintLeft_toRightOf="@id/textView_size"
+        app:layout_constraintTop_toTopOf="@id/textView_quantity"
+        tools:text="Default"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_urgent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/displayItem_urgent"
+        app:layout_constraintLeft_toLeftOf="@id/textView_detail"
+        app:layout_constraintTop_toBottomOf="@id/textView_quantity" />
+
+    <ImageView
+        android:id="@+id/imageView_urgent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@id/textView_urgent"
+        app:layout_constraintTop_toBottomOf="@id/textView_quantity"
+        app:srcCompat="@drawable/checked" />
+
+    <ImageButton
+        android:id="@+id/imageButton_edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:srcCompat="@drawable/edit_icon"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

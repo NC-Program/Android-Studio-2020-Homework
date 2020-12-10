@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" 買い物リスト"</string>
+    <string name="navigation_urgent">" 緊急リスト"</string>
+    <string name="navigation_home">" 家"</string>
+    <string name="navigation_completed">完成したリスト</string>
+    <string name="item_bought">" 買った"</string>
+    <string name="item_name">" 名前："</string>
+    <string name="item_quantity">数量：</string>
+    <string name="item_size">サイズ：</string>
+    <string name="item_date_bought">" 購入日："</string>
+    <string name="size_preset_default">既定</string>
+    <string name="size_preset_small">" 小さい"</string>
+    <string name="size_preset_medium">中</string>
+    <string name="size_preset_large">" 大"</string>
+    <string name="label_item">" 項目"</string>
+    <string name="label_details">" 詳細"</string>
+    <string name="label_quantity">"  数量 "</string>
+    <string name="hint_shopping_item">ショッピングアイテム</string>
+    <string name="label_urgent">" 緊急"</string>
+    <string name="label_size">サイズ</string>
+    <string name="button_label_addToList">リストに追加する</string>
+    <string name="button_label_update">アイテムの更新</string>
+    <string name="menu_urgentList">" 緊急アイテム"</string>
+    <string name="menu_shoppingList">" 買い物リスト"</string>
+    <string name="menu_addItem">" アイテムを追加"</string>
+    <string name="menu_displayItem">表示アイテム</string>
+    <string name="menu_completed">購入したアイテム</string>
+    <string name="menu_editItem">" アイテムの編集"</string>
+    <string name="dialog_delete_title">" アイテムを削除"</string>
+    <string name="dialog_delete_yes">" 削除"</string>
+    <string name="dialog_delete_no">" キャンセル"</string>
+    <string name="displayItem_shoppingItem">ショッピングアイテム</string>
+    <string name="displayItem_detail">詳細</string>
+    <string name="displayItem_quantity">数量：</string>
+    <string name="displayItem_size">" サイズ："</string>
+    <string name="displayItem_urgent">" 緊急："</string>
+    <string name="error_itemNotSelected">" 購入するアイテムを入力してください"</string>
+    <string name="title_activity_urgent">" 緊急の活動"</string>
+</resources>

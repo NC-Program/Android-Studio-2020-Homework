@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Distance Tracker</string>
+    <string name="label_instruction">Select your destination</string>
+    <string name="spring">Spring Shopping Mall</string>
+    <string name="vivacity">Vivacity Shopping Mall</string>
+    <string name="distance">Distance: </string>
+    <string name="error_message">Impossible to have distance 0. Unless you are so lucky, boy.</string>
+</resources>

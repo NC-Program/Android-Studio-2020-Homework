@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Week3 Demonstration</string>
+    <string name="my_profile">My Profile</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="submit">Submit</string>
+</resources>

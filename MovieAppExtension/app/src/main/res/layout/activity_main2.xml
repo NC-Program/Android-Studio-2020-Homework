@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/networkImageView_movie_big_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/textView_title_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networkImageView_movie_big_poster" />
+
+    <TextView
+        android:id="@+id/textView_popularity_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_popularity"
+        app:layout_constraintLeft_toLeftOf="@id/textView_title_watch"
+        app:layout_constraintTop_toBottomOf="@id/textView_title_watch" />
+
+    <TextView
+        android:id="@+id/textView_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_overview"
+        app:layout_constraintLeft_toLeftOf="@id/textView_title_watch"
+        app:layout_constraintTop_toBottomOf="@id/textView_popularity_watch"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/textView_overview_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="overview detail"
+        android:maxWidth="300dp"
+        app:layout_constraintLeft_toLeftOf="@id/textView_title_watch"
+        app:layout_constraintTop_toBottomOf="@id/textView_overview"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/button_add_to_watch_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_add_to_watch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_overview_watch"
+       />
+</androidx.constraintlayout.widget.ConstraintLayout>

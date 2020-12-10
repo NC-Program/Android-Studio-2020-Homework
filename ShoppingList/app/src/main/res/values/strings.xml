@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+
+    <string name="navigation_home">Home</string>
+    <string name="navigation_urgent">Urgent List</string>
+    <string name="navigation_completed">Completed List</string>
+    <string name="item_bought">Bought</string>
+    <string name="item_name">Name: </string>
+    <string name="item_quantity">Qty: </string>
+    <string name="item_size">Size: </string>
+    <string name="item_date_bought">Date bought: </string>
+
+    <string name="size_preset_default">Default</string>
+    <string name="size_preset_small">Small</string>
+    <string name="size_preset_medium">Medium</string>
+    <string name="size_preset_large">Large</string>
+
+    <string name="label_item">Item</string>
+    <string name="label_details">Details</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="hint_shopping_item">Shopping Item</string>
+    <string name="label_urgent">Urgent</string>
+    <string name="label_size">Size</string>
+    <string name="button_label_addToList">ADD TO LIST</string>
+    <string name="button_label_update">UPDATE ITEM</string>
+
+    <string name="menu_urgentList">Urgent Items</string>
+    <string name="menu_shoppingList">Shopping List</string>
+    <string name="menu_addItem">Add Item</string>
+    <string name="menu_displayItem">Display Item</string>
+    <string name="menu_completed">Item Bought</string>
+    <string name="menu_editItem">Edit Item</string>
+
+    <string name="dialog_delete_title">Delete Item</string>
+    <string name="dialog_delete_yes">DELETE</string>
+    <string name="dialog_delete_no">CANCEL</string>
+
+    <string name="displayItem_shoppingItem">Shopping Item</string>
+    <string name="displayItem_detail">Detail</string>
+    <string name="displayItem_quantity">Quantity: </string>
+    <string name="displayItem_size">Size: </string>
+    <string name="displayItem_urgent">Urgent: </string>
+
+    <string name="error_itemNotSelected">Please enter the item to be purchased</string>
+
+    <string-array name="spinner_details">
+        <item>Default</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+
+    </string-array>
+
+    <string name="title_activity_urgent">ActivityUrgent</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

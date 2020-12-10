@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/networkImageView_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_launcher_foreground"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOVIE TITLE"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@+id/networkImageView_movie"
+        app:layout_constraintLeft_toRightOf="@id/networkImageView_movie"
+        android:layout_marginTop="10dp"
+         />
+
+    <TextView
+        android:id="@+id/textView_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_genre"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textView_title"
+        app:layout_constraintLeft_toLeftOf="@id/textView_title"
+        android:layout_marginTop="10dp"
+        android:maxWidth="200dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_popularity"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textView_genre"
+        app:layout_constraintLeft_toLeftOf="@id/textView_title"
+        android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="location">Kenny Hill Woods</string>
+    <string name="temperature" translatable="false">18\u00B0</string>
+    <string name="overcast_cloud">Overcast Cloud</string>
+    <string name="clouds">Clouds</string>
+    <string name="visibility">Visivility</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="birmingham">Birmingham</string>
+    <string name="party_cloud">22\u00B0 Party Cloudy</string>
+    <string name="lake_district">Lake District</string>
+    <string name="snow_shower">2\u00B0 Snow Shower</string>
+</resources>

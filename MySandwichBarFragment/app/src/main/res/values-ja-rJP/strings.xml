@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">私のサンドイッチバー</string>
+    <string name="addOn">追加</string>
+    <string name="total">合計</string>
+    <string name="smallSize">6 インチ</string>
+    <string name="mediumSize">9 インチ</string>
+    <string name="largeSize">12 インチ</string>
+    <string name="hamSlices">ハムスライス</string>
+    <string name="roastedChicken">ローストチキン</string>
+    <string name="beefSteak">ステーキ</string>
+    <string name="grilledSalmon">焼き鮭</string>
+    <string name="kebab">ケバブ</string>
+    <string name="tomato">トマト</string>
+    <string name="lettuce">レタス</string>
+    <string name="cheese">チーズ</string>
+    <string name="onion">" 玉ねぎ"</string>
+    <string name="tea">お茶</string>
+    <string name="coffee">コーヒー</string>
+    <string name="frenchFries">フライドポテト</string>
+</resources>

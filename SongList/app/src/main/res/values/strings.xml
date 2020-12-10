@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Song List</string>
+    <string name="tabOneTitle">POP</string>
+    <string name="tabTwoTitle">OTHERS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
